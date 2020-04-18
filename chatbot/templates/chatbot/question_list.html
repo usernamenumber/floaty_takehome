@@ -1,0 +1,29 @@
+{% extends "chatbot/base.html" %}
+{% block content %}
+<div class="question_list">
+    {% for question in object_list %}
+    <div class="list_item {% cycle 'odd' 'even' %}">
+        <div class="heading">
+            Question with {{ question.answer_set.count }} answers across {{ question.history.count }} versions
+        </div>
+        <div class="content">
+            "{{ question.text }}""
+        </div>
+        <div class="actions_list">
+            <a href="{% url 'chatbot:question_update' question.id %}">
+                edit
+            </a>
+             ~ 
+            <a href="{% url 'chatbot:question_history' question.id %}">
+                history
+            </a>
+        </div>
+    </div>
+    {% empty %}
+        <div class="no_item">No questions yet.</div>
+    {% endfor %}
+</div>
+<div class="actions_list">
+    <a href="{% url 'chatbot:question_create' %}"><button>Add a question</button></a>
+</div>
+{% endblock %}
