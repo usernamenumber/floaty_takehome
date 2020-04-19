@@ -18,7 +18,7 @@ The project took approximately 11 hours to complete (see "Challenges" below).
 
     ```bash
     ( set -xe   # be verbose, stop if any command fails
-    git clone https://github.com/usernamenumber/floaty_takehome
+    git clone https://github.com/usernamenumber/floaty_takehome -b initialwork
     cd floaty_takehome
     pip3 install -r requirements.txt
     python3 manage.py migrate
