@@ -1,0 +1,88 @@
+
+.list_item {
+    border-style: none;
+    border-left-width: thick; 
+    border-left-style: solid;
+    border-radius: 5px;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.list_item.even {
+    border-color: lightgreen;
+}
+
+.list_item.odd {
+    border-color: lightblue;
+}
+
+.list_item > .heading {
+    font-weight: bold;
+}
+
+.list_item > .content {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.actions_list {
+    padding-left: 10px; 
+    padding-top: 10px;
+}
+
+.question_list > .list_item > .content {
+    font-size: 150%;
+}
+
+.question_history_list > .list_item {
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    margin-bottom: 10px;
+}
+
+.question_history_list > .list_item:hover {
+    background-color: lightyellow;
+}
+
+.question_history_list > .list_item > .content {
+    font-size: 150%;
+}
+
+.question_history_answer_list {
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.question_history_answer_list > .heading {
+    font-weight: bold;
+}
+
+.question_history_answer_list > .list_item {
+    padding-left: 20px;
+}
+
+.question_history_answer_list > .list_item > .heading {
+    font-style: italic;
+}
+
+
+.question_history_answer_list > .list_item > .content {
+    font-size: 120%;
+    padding-left: 10px;
+}
+
+.no_item {
+    font-style: italic;
+}
+
+.diff_removed {
+    background-color: pink;
+    text-decoration: line-through;
+    display: inline-block;
+}
+
+.diff_added {
+    background-color: lightgreen;
+    font-weight: bold;
+    display: inline-block;
+}

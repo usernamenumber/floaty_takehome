@@ -1,0 +1,42 @@
+{% extends "chatbot/base.html" %}
+{% load diff_filter %}
+{% block content %}
+<div class="question_history_list">
+{% for version in question.history.all reversed %}
+    <div class="list_item {% cycle 'odd' 'even' %}">
+        <div class="heading">
+            Version {{ forloop.counter }}, created {{ version.history_date }} 
+            {% if forloop.last %}
+                <em>(current)</em> 
+            {% endif %}
+        </div>
+        <div class="content">
+            {% if forloop.first %}
+                "{{ version.text }}"
+            {% else %}
+            "{{ version.previous_and_current_text | diff }}"
+            {% endif %}
+        </div>
+        <div class="question_history_answer_list">
+            <div class="heading">
+                Answers submitted for this version:
+            </div>
+            {% for answer in version.answers_for_version %}
+                <div class="list_item {% cycle 'odd' 'even' %}">
+                    <div class="heading">
+                        By {{ answer.user.get_username }} on {{ answer.create_date }}:
+                    </div>
+                    <div class="content">
+                        "{{answer.text}}"
+                    </div>
+                </div>
+            {% empty %}
+                <div class="no_item">
+                    None
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,175 @@
+[
+  {
+    "model": "chatbot.question",
+    "pk": 5,
+    "fields": {
+      "text": "Cats or dogs?"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$180000$ivyripK5jw66$Gra44aY/ldYPK4l+fH/2Y6D9lI3g0zYEWbXVRcOgKxg=",
+      "last_login": "2020-04-18T17:27:23.288Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2020-04-18T17:27:13.261Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$180000$XETyRxLrzl3H$7cyqrTtZtGKJaP6flXn2xxGbAF4dXlXb6yDgMRO+HxA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "michael",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2020-04-18T17:28:57.596Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$180000$07BxMAMIdWJ6$ckDhZTeTq8t8aZVclvIV6ll5ki+5gDjZ8vQ0HYQdKok=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "phillipa",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2020-04-18T17:29:13.921Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$180000$KvrLwXgxXKxo$QxLfZMxuyGjeOeVZA9qqNs4rRqSU1CxoIrVGAkL1Gzo=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "chris",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2020-04-18T17:29:49.266Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$180000$pC7Ho1RKTBlP$5ISyOZxhkNyoD2Gk6hACfZfY6qF3FBj40kus/sysOV0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "tilly",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2020-04-18T17:42:40.089Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "chatbot.answer",
+    "pk": 3,
+    "fields": {
+      "text": "Yes. Dogs are good and loyal.",
+      "question": 5,
+      "user": 4,
+      "create_date": "2020-04-18T17:38:20.371Z"
+    }
+  },
+  {
+    "model": "chatbot.answer",
+    "pk": 4,
+    "fields": {
+      "text": "Nah, cats are much more chill, and therefore better.",
+      "question": 5,
+      "user": 5,
+      "create_date": "2020-04-18T17:39:23.120Z"
+    }
+  },
+  {
+    "model": "chatbot.answer",
+    "pk": 5,
+    "fields": {
+      "text": "I have no strong feelings about them",
+      "question": 5,
+      "user": 3,
+      "create_date": "2020-04-18T17:41:20.114Z"
+    }
+  },
+  {
+    "model": "chatbot.answer",
+    "pk": 6,
+    "fields": {
+      "text": "YES!",
+      "question": 5,
+      "user": 6,
+      "create_date": "2020-04-18T17:43:25.069Z"
+    }
+  },
+  {
+    "model": "chatbot.historicalquestion",
+    "pk": 11,
+    "fields": {
+      "id": 5,
+      "text": "Seriously, how great are dogs?",
+      "history_date": "2020-04-18T17:23:06.709Z",
+      "history_change_reason": null,
+      "history_type": "+",
+      "history_user": null
+    }
+  },
+  {
+    "model": "chatbot.historicalquestion",
+    "pk": 12,
+    "fields": {
+      "id": 5,
+      "text": "Seriously, how great are cats?",
+      "history_date": "2020-04-18T17:40:04.394Z",
+      "history_change_reason": null,
+      "history_type": "~",
+      "history_user": null
+    }
+  },
+  {
+    "model": "chatbot.historicalquestion",
+    "pk": 13,
+    "fields": {
+      "id": 5,
+      "text": "Cats or dogs?",
+      "history_date": "2020-04-18T17:42:14.029Z",
+      "history_change_reason": null,
+      "history_type": "~",
+      "history_user": null
+    }
+  }
+]
